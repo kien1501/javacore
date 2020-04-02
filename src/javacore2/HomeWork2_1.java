@@ -11,8 +11,8 @@ public class HomeWork2_1 {
             for (int j = 1; j <=h-i; j++) {
                 System.out.print(" ");
             }
-            for (int k = 1; k <=i ; k++) {
-                System.out.print("* ");
+            for (int k = 1; k <=2*i -1; k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
