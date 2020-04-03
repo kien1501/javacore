@@ -36,10 +36,10 @@ public class HomeWork2_5 {
         };
         System.out.println("Thực hiện với do while");
         do {
+            sum3 +=b;
             if (b==n){
-                sum3 +=b;
                 average = (float)(sum3/n);
-                System.out.println("Tổng Là: "+sum);
+                System.out.println("Tổng Là: "+sum3);
                 System.out.println("TBC Là: "+average);
             }
             b++;
