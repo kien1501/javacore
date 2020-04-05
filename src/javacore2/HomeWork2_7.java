@@ -10,29 +10,39 @@ public class HomeWork2_7 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập số cần chuyển n: ");
         int n = sc.nextInt();
-        List<String> list = new ArrayList<>();
+        String str = "";
+//        List<String> list = new ArrayList<>();
         int k =0;
         while (n!=0){
             if (n%16 <= 9){
-                list.add(""+n%16);
+                str = str +n%16;
+//                list.add(""+n%16);
             }else if (n%16 == 10){
-                list.add("A");
+                str = str +"A";
+//                list.add("A");
             }else if (n%16 == 11){
-                list.add("B");
+                str = str +"B";
+//                list.add("B");
             }else if (n%16 == 12){
-                list.add("C");
+                str = str +"C";
+//                list.add("C");
             }else if (n%16 == 13){
-                list.add("D");
+                str = str +"D";
+//                list.add("D");
             }else if (n%16 == 14){
-                list.add("E");
+                str = str +"E";
+//                list.add("E");
             }else {
-                list.add("F");
+                str = str +"F";
+//                list.add("F");
             }
             k++;
             n/=16;
         }
-        for (int i = list.size()-1; i >=0 ; i--) {
-            System.out.print(list.get(i));
-        }
+        StringBuilder str1 = new StringBuilder(str);
+        System.out.println(str1.reverse());
+//        for (int i = list.size()-1; i >=0 ; i--) {
+//            System.out.print(list.get(i));
+//        }
     }
 }
