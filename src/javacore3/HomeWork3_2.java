@@ -13,7 +13,6 @@ public class HomeWork3_2 {
         List<Integer> list = new ArrayList<>();
         List<Integer> list1 = new ArrayList<>();
         List<Integer> result = new ArrayList<>();
-        list.add(1);
         for (int i = 0; i <n ; i++) {
             System.out.println("Nhập vào số thứ "+(i+1)+" :");
             list.add(sc.nextInt());
