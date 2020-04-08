@@ -19,7 +19,7 @@ public class HomeWork2_5 {
         for (int i = 0; i <=n; i++) {
             sum +=i;
             if (i ==n ){
-                average = (float)(sum/n);
+                average = (float)sum/n;
                 System.out.println("Tổng Là: "+sum);
                 System.out.println("TBC Là: "+average);
             }
@@ -28,7 +28,7 @@ public class HomeWork2_5 {
         while (n>=a){
             sum2+=a;
             if (a==n){
-                average = (float)(sum2/n);
+                average = (float)sum2/n;
                 System.out.println("Tổng Là: "+sum2);
                 System.out.println("TBC Là: "+average);
             }
@@ -38,7 +38,7 @@ public class HomeWork2_5 {
         do {
             sum3 +=b;
             if (b==n){
-                average = (float)(sum3/n);
+                average = (float)sum3/n;
                 System.out.println("Tổng Là: "+sum3);
                 System.out.println("TBC Là: "+average);
             }
