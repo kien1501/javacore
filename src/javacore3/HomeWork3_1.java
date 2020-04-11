@@ -20,7 +20,7 @@ public class HomeWork3_1 {
                 if (arr[i]== arr[i-1]+1){
                     arr1[i]= arr1[i-1]+1;
                 }else {
-                    arr1[i]=0;
+                    arr1[i]=1;
                 }
         }
 //        for (int item: arr1
