@@ -27,7 +27,6 @@ public class Main {
                 case 2:{
                     for (Student item:list
                          ) {
-                        item.display();
                         System.out.println(item);
                     }
                 }
@@ -36,7 +35,6 @@ public class Main {
                     Student min = new Student();
                     for (int i = 1; i <list.size() ; i++) {
                         for (int j = 0; j <i ; j++) {
-                            Student st =new Student();
                         if (list.get(i).getGpa() <list.get(j).getGpa()) {
                             min = list.get(i);
                             list.set(i,list.get(j));

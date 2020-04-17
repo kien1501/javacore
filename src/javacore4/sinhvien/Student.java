@@ -12,14 +12,6 @@ public class Student {
     public Student() {
     }
 
-    public Student(String id, String name, int age, String email, float gpa) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.email = email;
-        this.gpa = gpa;
-    }
-
     public String getId() {
         return id;
     }
@@ -48,16 +40,28 @@ public class Student {
         return email;
     }
 
-    public void setAddress(String email) {
+    public boolean setEmail(String email) {
+        if (email != null && email.contains("@")&& !email.contains(" ")){
         this.email = email;
+        return true;
+        }else {
+            System.out.println("Nhập lại: ");
+            return false;
+        }
     }
 
     public float getGpa() {
         return gpa;
     }
 
-    public void setGpa(float gpa) {
-        this.gpa = gpa;
+    public boolean setGpa(float gpa) {
+        if (gpa >=0 && gpa <=10 ){
+            this.gpa = gpa;
+            return true;
+        }else {
+            System.out.println("Nhập lại: ");
+            return false;
+        }
     }
     public void input(){
         Scanner sc = new Scanner(System.in);
@@ -68,9 +72,20 @@ public class Student {
         System.out.println("Nhập vào tuổi của sinh viên: ");
         age = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập vào email của sinh viên: ");
-        email = sc.nextLine();
+        while (true){
+            boolean check = setEmail(sc.nextLine());
+            if (check){
+                break;
+            }
+        }
         System.out.println("Nhập vào điểm của sinh viên: ");
-        gpa = Float.parseFloat(sc.nextLine());
+        while (true){
+            boolean check = setGpa(Float.parseFloat(sc.nextLine()));
+            if (check){
+                break;
+            }
+        }
+//        gpa = Float.parseFloat(sc.nextLine());
     }
     public void display(){
         toString();
