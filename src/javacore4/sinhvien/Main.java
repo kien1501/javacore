@@ -19,6 +19,7 @@ public class Main {
                     int n = sc.nextInt();
                     for (int i = 0; i < n ; i++) {
                         Student student = new Student();
+                        System.out.println("Nhập vào thông tin sinh viên thứ: "+(i+1));
                         student.input();
                         list.add(student);
                     }
