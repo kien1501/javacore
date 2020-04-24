@@ -4,8 +4,9 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Baibao {
-    private String tieuDe, noiDung, theLoai, tacGia;
+    private String tieuDe, noiDung, tacGia;
     private Date ngayDang;
+    private int ms;
     public Baibao() {
     }
 
@@ -25,15 +26,6 @@ public class Baibao {
     public void setNoiDung(String noiDung) {
         this.noiDung = noiDung;
     }
-
-    public String getTheLoai() {
-        return theLoai;
-    }
-
-    public void setTheLoai(String theLoai) {
-        this.theLoai = theLoai;
-    }
-
     public String getTacGia() {
         return tacGia;
     }
@@ -50,30 +42,5 @@ public class Baibao {
         this.ngayDang = ngayDang;
     }
 
-    public void nhap(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập tiêu đề: ");
-        tieuDe = sc.nextLine();
-        System.out.println("Nhập nội dung bai viết: ");
-        noiDung = sc.nextLine();
-        System.out.println("Nhập tên tác giả: ");
-        tacGia = sc.nextLine();
-        System.out.println("Nhập thể loại bài viết: ");
-        theLoai = sc.nextLine();
-        ngayDang = new Date();
 
-    }
-    public void hienThi(){
-    System.out.println(toString());
-    }
-    @Override
-    public String toString() {
-        return "Baibao{" +
-                "tieuDe='" + tieuDe + '\'' +
-                ", noiDung='" + noiDung + '\'' +
-                ", theLoai='" + theLoai + '\'' +
-                ", tacGia='" + tacGia + '\'' +
-                ", ngayDang=" + ngayDang.toString() +
-                '}';
-    }
 }
